@@ -46,6 +46,10 @@ class MainActivity : AppCompatActivity(),LocationListener {
         tvOutput.text = "Latitude " + p0.latitude + " Longitude: " + p0.longitude
     }
 
+    override fun onProviderDisabled(provider: String) {
+
+    }
+
     override fun onRequestPermissionsResult(
         requestCode: Int,
         permissions: Array<out String>,
